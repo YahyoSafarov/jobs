@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f3f6fc;
+}
+
+
+@layer components {
+  .btn {
+    display: inline-block;
+    border-radius: 8px;
+    width: 137px;
+    height: 44px;
+
+    color: #fff;
+    background: #003193;
+    font-size: 16px;
+    transition: 0.5s ease;
+  }
+  .btn:hover {
+    background: transparent;
+    color: #003193;
+    box-shadow: 0 0 20px #003193;
+  }
+
+  @layer components {
+    .btn2 {
+      display: inline-block;
+      border-radius: 8px;
+      width: 137px;
+      height: 44px;
+
+      color: #000;
+      background: #ffcc00;
+      font-size: 16px;
+      transition: 0.5s ease;
+    }
+    .btn2:hover {
+      background: transparent;
+      color: #ffcc00;
+      box-shadow: 0 0 20px #ffcc00;
+    }
+  }
+
+  .card {
+    @apply p-3 rounded-md bg-white shadow-md h-full;
+  }
+}
